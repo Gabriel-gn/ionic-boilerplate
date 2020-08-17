@@ -1,0 +1,13 @@
+{
+  "appId": "com.gabrielgn.ionicboilerplate",
+  "appName": "ionic-boilerplate",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "dist/ionic-boilerplate",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}

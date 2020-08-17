@@ -1,0 +1,18 @@
+<ion-content>
+  <div style="max-height: 100vh">
+    <mat-drawer-container style="height: 100vh;" autosize>
+
+      <mat-drawer #drawer class="h-100" mode="side">
+        <app-sidebar></app-sidebar>
+      </mat-drawer>
+
+      <mat-drawer-content style="max-height: 100vh; overflow: hidden;">
+        <app-navbar [sidenav]="drawer"></app-navbar>
+        <div class="p-3 pb-0 h-100 overflow-auto">
+          <router-outlet></router-outlet>
+        </div>
+      </mat-drawer-content>
+
+    </mat-drawer-container>
+  </div>
+</ion-content>
