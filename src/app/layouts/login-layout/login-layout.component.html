@@ -1,4 +1,43 @@
-<ion-content>
-  <p>layout login</p>
-  <router-outlet></router-outlet>
+<ion-content scroll-y="false">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Login Navbar</a>
+      <button aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation"
+              class="navbar-toggler"
+              data-target="#navbarsExample01" data-toggle="collapse" type="button">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample01">
+        <ul class="navbar-nav mr-auto mb-2">
+          <li class="nav-item active">
+            <a aria-current="page" class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a aria-disabled="true" class="nav-link disabled" href="#" tabindex="-1">Disabled</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a aria-expanded="false" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="dropdown01">Dropdown</a>
+            <ul aria-labelledby="dropdown01" class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form>
+          <input aria-label="Search" class="form-control" placeholder="Search" type="text">
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div style="max-height: calc(100vh - 56px); overflow: hidden;">
+    <div class="p-3 pb-0 h-100 overflow-auto">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </ion-content>
