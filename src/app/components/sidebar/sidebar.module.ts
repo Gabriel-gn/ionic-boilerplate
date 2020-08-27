@@ -3,6 +3,7 @@ import {CommonModule} from '@angular/common';
 import {SidebarComponent} from '../sidebar/sidebar.component';
 import {RouterModule} from '@angular/router';
 import {NgMaterialMultilevelMenuModule} from 'ng-material-multilevel-menu';
+import {MatDividerModule} from '@angular/material/divider';
 
 
 @NgModule({
@@ -10,7 +11,8 @@ import {NgMaterialMultilevelMenuModule} from 'ng-material-multilevel-menu';
   imports: [
     CommonModule,
     RouterModule,
-    NgMaterialMultilevelMenuModule
+    NgMaterialMultilevelMenuModule,
+    MatDividerModule
   ],
   exports: [SidebarComponent]
 })

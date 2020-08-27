@@ -1,0 +1,35 @@
+.sidebar-header {
+  display: flex;
+
+  .user-avatar {
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    height: 50px;
+    min-height: 50px;
+    width: 50px;
+    min-width: 50px;
+    background-color: rgba(159, 162, 164, 0.26);
+
+    p {
+      margin: 0px;
+      font-size: 20px;
+      font-weight: bold;
+      align-self: center;
+    }
+  }
+
+  .user-info {
+    display: flex;
+    width: 100%;
+
+    p {
+      font-size: 16px;
+      margin: 0px;
+      align-self: center;
+      text-align: center;
+    }
+  }
+
+
+}
