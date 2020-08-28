@@ -2,7 +2,7 @@
   <div style="max-height: 100vh">
     <mat-drawer-container style="height: 100vh;" autosize>
 
-      <mat-drawer #drawer class="h-100" mode="side">
+      <mat-drawer #drawer [mode]="'push'" class="h-100" mode="side">
         <app-sidebar></app-sidebar>
       </mat-drawer>
 
