@@ -11,6 +11,7 @@ export class SidebarComponent implements OnInit {
     {
       label: 'Item 1 (with Font awesome icon)',
       faIcon: 'fab fa-500px',
+      expanded: true,
       items: [
         {
           label: 'Item 1.1',
